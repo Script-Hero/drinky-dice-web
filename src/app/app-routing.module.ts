@@ -13,7 +13,8 @@ const routes: Routes = [
   {path : 'new', component : NewComponent},
   {path : 'play', component : PlayComponent},
   {path : 'home', component : HomeComponent},
-  {path : 'about', component : AboutComponent}
+  {path : 'about', component : AboutComponent},
+  {path : 'drinky-dice', redirectTo : 'home', pathMatch : 'full'}
 ];
 
 @NgModule({

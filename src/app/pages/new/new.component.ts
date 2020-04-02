@@ -13,7 +13,7 @@ import {  DOCUMENT } from '@angular/common';
 export class NewComponent implements OnInit {
   game;
   players = [];
-  @ViewChild('box') inputBox: ElementRef;
+  @ViewChild('box', { static: true }) inputBox: ElementRef;
   overflowValue:string = 'hidden';
   constructor(private Save : GameSaveService, private router : Router, @Inject(DOCUMENT) private document: Document) { }
 

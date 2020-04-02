@@ -6,15 +6,10 @@ html, body {
   color : black;
   position : absolute;
   font-size: 4em;
-  font-weight : 200;
-}
-
-a {
-  text-decoration : none;
-  position: absolute;
   top : 2%;
   left : 2%;
 }
+
 
 #page-text-content {
   margin-top : 5%;

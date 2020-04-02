@@ -30,4 +30,8 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  goAbout(){
+    this.router.navigate(['/about'])
+  }
+
 }

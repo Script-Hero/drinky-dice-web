@@ -1,0 +1,12 @@
+#svg {
+  display : block;
+  margin : auto;
+}
+
+#main-g {
+  transform : translateX(-50%);
+}
+
+#back-dice > use{
+  fill : #DEDEDE;
+}

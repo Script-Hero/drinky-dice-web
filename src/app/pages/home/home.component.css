@@ -1,0 +1,201 @@
+body {
+  overflow: hidden;
+}
+
+
+
+
+#drinky-dice {
+  color : white;
+  text-align: center;
+  font-size: 60px;
+  font-family: Roboto;
+  position : relative;
+  z-index: 2;
+  margin-top : 0px;
+}
+
+#dice::before {
+  content : "\A";
+  white-space: pre;
+}
+
+#drinky {
+  margin-left : -100px;
+}
+#dice {
+  margin-right : -100px;
+}
+
+#newGameButton, #continueGameButton{
+  position : relative;
+  z-index: 3;
+  height : 75px;
+  width : 200px;
+  background-color: #E6B31E;
+  border : none;
+  border-radius: 4px;
+  cursor : pointer;
+  /*box-shadow : 4px 4px 10px; */
+}
+
+#newGameButtonDiv {
+  /*margin-top : -50px;*/
+  margin-bottom : 25px;
+}
+
+
+#newGameButtonDiv, #continueGameButtonDiv {
+  text-align: center;
+  cursor : pointer;
+}
+
+
+#continueGameText {
+  font-size : 25px;
+}
+
+#diceSVG {
+  position : relative;
+  z-index : 5;
+  display : block;
+  margin : auto;
+}
+
+#diceSVGcontainer {
+  text-align: center;
+  margin-top : -100px;
+  margin-left : -50px;
+}
+
+
+/**
+
+Phone #background-shader OLD
+#background-shader {
+  position: absolute;
+  top : 0;
+  width : 150%;
+  height : 150%;
+  margin-left : -30%;
+  margin-top : -100%;
+  background-color : #1E1E1E;
+  z-index: 1;
+  transform: rotateY(0deg) rotate(70deg);
+  transform-origin: center;
+  overflow-y : hidden;
+}
+*/
+
+#background-shader {
+  top : 0;
+  left : 20%;
+  position: absolute;
+  width : 150%;
+  height : 110%;
+  background-color : #1E1E1E;
+  z-index: 1;
+  transform: rotateY(0deg) rotate(45deg);
+  transform-origin: center;
+}
+
+
+#about_wrapper {
+  left : 1%;
+  bottom : 3%;
+  position : fixed;
+  z-index : 31;
+}
+
+#about-a {
+  text-decoration: none;
+  color : white;
+}
+
+#about-icon {
+  font-size : 3em;
+}
+
+
+/** Phones **/
+@media screen and (max-width: 40em) {
+  #background-shader {
+    position: absolute;
+
+    top : 0;
+    left : 0;
+    height : 150%;
+    width : 150%;
+    background-color : #1E1E1E;
+    z-index: 1;
+    transform: rotateY(0deg) rotate(45deg);
+    transform-origin: center;
+  }
+
+  html, body {
+    overflow : hidden;
+    left : 0;
+    top : 0;
+    height : 100%;
+    width : 100%
+  }
+
+  body {
+    position : relative;
+    margin : 0;
+    padding : 0;
+  }
+
+}
+
+/** Smaller Phones **/
+
+@media screen and (max-width : 400px) and (max-height : 580px){
+  #drinky-dice, #diceSVG, #newGameButton, #continueGameButton, #about-icon {
+    transform : scale(0.75);
+  }
+
+  #newGameButtonDiv {
+    margin-bottom : 10px;
+  }
+}
+
+/** Bigger phones, like the iphone x or the 6 plus **/
+@media screen and (max-width: 40em) and (min-height : 700px){
+  #page-content {
+    margin-top : 15%;
+  }
+}
+
+
+
+@media (min-width : 641px) and (max-width : 1000px){
+  #background-shader {
+    position: absolute;
+
+    top : 0;
+    left : 0;
+    height : 170%;
+    width : 170%;
+    background-color : #1E1E1E;
+    z-index: 1;
+    transform: rotateY(0deg) rotate(45deg);
+    transform-origin: center;
+    margin-left : 30%;
+    margin-top : 30%;
+  }
+
+  html, body {
+    overflow : hidden;
+    left : 0;
+    top : 0;
+    height : 100%;
+    width : 100%
+  }
+
+  body {
+    position : relative;
+    margin : 0;
+    padding : 0;
+  }
+}

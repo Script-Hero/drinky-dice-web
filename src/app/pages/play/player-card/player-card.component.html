@@ -1,0 +1,11 @@
+<div id="player-card" >
+  <p id="numDice" [style.color]="loser ? '#e6b31e' : 'white'">x{{numDice}}</p>
+
+  <div id="player-card-circle" [style.backgroundColor]="color" >
+    <p id="curNum" >{{curNum}}</p>
+    <div id="circle-shadow"></div>
+  </div>
+
+
+  <p id="name" [style.color]="loser ? '#E6B31E' : 'white'"> {{playerName}}</p>
+</div>

@@ -1,0 +1,79 @@
+* {
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y : hidden;
+}
+
+#player-card-container {
+  text-align: center;
+  margin-top : 50px;
+}
+
+#centerwrapper {
+  margin : auto;
+}
+
+#rollButton {
+  display : block;
+  margin : auto;
+  margin-top : 50px;
+  cursor : pointer;
+  height : 50px;
+  width : 300px;
+  background-color : #E6B31E;
+  font-family : Roboto;
+  font-size : 30px;
+  border-radius : 3px;
+  border : none;
+  position : relative;
+  z-index : 1;
+}
+
+
+#background-shader {
+  top : 0;
+  left : 20%;
+  position: absolute;
+  width : 150%;
+  height : 110%;
+  background-color : #1E1E1E;
+  z-index: 0;
+  transform: rotateY(0deg) rotate(45deg);
+  transform-origin: center;
+}
+@media screen and (max-width: 40em) {
+  #background-shader {
+    position: absolute;
+
+    top : 0;
+    left : 0;
+    height : 150%;
+    width : 150%;
+    background-color : #1E1E1E;
+    z-index: 0;
+    transform: rotateY(0deg) rotate(45deg);
+    transform-origin: center;
+  }
+
+  html, body {
+    overflow : hidden;
+    left : 0;
+    top : 0;
+    height : 100%;
+    width : 100%
+  }
+
+  body {
+    position : relative;
+    margin : 0;
+    padding : 0;
+  }
+}
+
+
+/** Smaller Phones **/
+@media screen and (max-width: 40em) and (max-height : 700px) {
+}

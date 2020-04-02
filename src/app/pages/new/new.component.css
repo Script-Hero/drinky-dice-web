@@ -1,0 +1,195 @@
+
+#contentContainer {
+  position: relative;
+}
+
+#background-container {
+  position: absolute;
+  overflow : hidden;
+  height : 100%;
+  width : 100%;
+  top : 0;
+  left : 0;
+  padding : 0;
+  margin : 0;
+}
+
+#background-shader {
+  top : 0;
+  left : 20%;
+  position: absolute;
+  width : 150%;
+  height : 110%;
+  background-color : #1E1E1E;
+  z-index: 1;
+  transform: rotateY(0deg) rotate(45deg);
+  transform-origin: center;
+}
+
+#add-players-title {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  color : white;
+  z-index: 2;
+  position: relative;
+}
+
+#playersList {
+  margin-top : 3%;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.playerItem {
+  margin : auto;
+  margin-top : 20px;
+  height : 50px;
+  width : 250px;
+  background-color: #E6B31E;
+  font-family: Roboto;
+  color : #2F2323;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+
+.playerItemColor {
+  height : 50px;
+  width : 50px;
+  position : absolute;
+}
+
+#addNameButton {
+  position: inline-block;
+  z-index: 2;
+}
+
+#inputBoxContainer {
+  text-align: center;
+  margin-top : 3%;
+  line-height: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+#addNameButton {
+  display : inline-block;
+  margin-left : 25px;
+  height : inherit;
+  width : 50px;
+  background-color : white;
+  border-radius: 4px;
+  font-family: Roboto;
+  cursor : pointer;
+  position: relative;
+  z-index: 2;
+}
+
+#addNameButtonText {
+  display: inline;
+  font-size : 14px;
+}
+
+#name-input-box {
+  border : none;
+  border-radius : 3px;
+  height : 30px;
+  width : 200px;
+  text-align : center;
+  font-weight: bold;
+}
+
+
+#playButton {
+  width : 300px;
+  height : 50px;
+  background-color : #8EFFD6;
+  margin : auto;
+  line-height: 50px;
+  cursor : pointer;
+  margin-top : 50px;
+  border-radius: 3px;
+}
+
+#playButtonText {
+  font-family : Roboto;
+  font-size : 24px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 40em) {
+
+  #background-shader {
+    position: absolute;
+
+    top : 0;
+    left : 0;
+    height : 150%;
+    width : 150%;
+    background-color : #1E1E1E;
+    z-index: 1;
+    transform: rotateY(0deg) rotate(45deg);
+    transform-origin: center;
+  }
+
+  html, body {
+    overflow : hidden;
+    left : 0;
+    top : 0;
+    height : 100%;
+    width : 100%
+  }
+
+  body {
+    position : relative;
+    margin : 0;
+    padding : 0;
+  }
+
+  #add-players-title {
+    margin-top : 15%;
+  }
+
+  #playersList {
+    margin-top : 10%;
+  }
+
+  #inputBoxContainer {
+    margin-top : 5%;
+  }
+
+  #playButton {
+    margin-top : 5%;
+  }
+
+}
+
+/** Bigger Phones **/
+@media screen and (max-width: 40em) and (min-height : 700px){
+  .playerItem {
+    transform : scale(1.25);
+  }
+
+  .playerItem:not(.first) {
+    margin-top : 10%;
+  }
+
+  #name-input-box {
+    margin-top : 5%;
+    margin-right : 5%;
+    transform : scale(1.25);
+
+  }
+
+  #addNameButton {
+    margin-top : 5%;
+    transform : scale(1.25);
+  }
+
+  #playButton {
+    margin-top : 10%;
+    transform : scale(1.1);
+  }
+}

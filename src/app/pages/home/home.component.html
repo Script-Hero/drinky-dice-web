@@ -1,0 +1,34 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+  <div id="page-content">
+    <h1 id="drinky-dice"><span id="drinky">Drinky</span><span id="dice">Dice</span></h1>
+
+    <div id="diceSVGcontainer">
+      <app-dice-svg id='diceSVG'></app-dice-svg>
+    </div>
+
+    <div id="newGameButtonDiv">
+      <button id='newGameButton'  (click)='newGame()'>
+        <h1 id='newGameText'>New Game</h1>
+      </button>
+    </div>
+
+    <div id="continueGameButtonDiv">
+    <button id='continueGameButton'(click)='continueGame()'>
+      <h1 id='continueGameText'>Continue Game</h1>
+    </button>
+    </div>
+
+    <div id="about_wrapper">
+      <a href="/about" id="about-a">
+        <i id="about-icon" class="material-icons">help_outline</i>
+      </a>
+    </div>
+
+  </div>
+
+
+  <div id="background-shader"></div>
+
+</body>

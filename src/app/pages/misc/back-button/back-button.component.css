@@ -1,0 +1,19 @@
+
+
+#back-icon {
+  color : white;
+  font-size: 5em;
+  margin-left : 5%;
+  cursor : pointer;
+  position: absolute;
+  z-index : 30;
+}
+
+@media screen and (max-width: 40em) {
+  #back-icon {
+    margin-top : -10%;
+    margin-left : 0;
+    font-size : 4em;
+    color : lightgrey;
+  }
+}

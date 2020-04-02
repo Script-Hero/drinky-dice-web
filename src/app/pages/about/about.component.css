@@ -1,10 +1,12 @@
 html, body {
   background-color : white;
+  overflow : visible;
 }
 
 #back-icon {
   color : black;
   position : absolute;
+  cursor : pointer;
   font-size: 4em;
   top : 2%;
   left : 2%;

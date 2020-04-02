@@ -7,6 +7,11 @@ body {
   overflow-y : hidden;
 }
 
+html, body {
+  background-color : #343434;
+}
+
+
 #player-card-container {
   text-align: center;
   margin-top : 50px;

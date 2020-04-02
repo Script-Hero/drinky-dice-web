@@ -1,3 +1,8 @@
+html, body {
+  background-color : #343434;
+}
+
+
 body {
   overflow: hidden;
 }
@@ -111,6 +116,7 @@ Phone #background-shader OLD
 #about-icon {
   font-size : 3em;
   color : white;
+  cursor : pointer;
 }
 
 

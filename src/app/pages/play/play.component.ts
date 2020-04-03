@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { GameSaveService } from '../../game-save.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-play',
@@ -11,11 +12,16 @@ import { GameSaveService } from '../../game-save.service';
 export class PlayComponent implements OnInit {
   players = [];
   save;
-  constructor(private Save : GameSaveService) { }
+  constructor(private Save : GameSaveService, private router : Router) { }
 
   ngOnInit() {
     this.save = this.Save.getGameSave();
     this.players = this.save.players;
+
+    if(this.players.length < 1){
+      alert("Add players before continuing.")
+      this.router.navigate(['/new'])
+    }
   }
 
   roll(n) {

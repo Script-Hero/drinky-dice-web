@@ -219,6 +219,29 @@
 
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  #background-shader {
+    position: absolute;
+    top : 0;
+    left : 0;
+    height : 200%;
+    width : 170%;
+    background-color : #1E1E1E;
+    z-index: 0;
+    transform: rotateY(0deg) rotate(45deg);
+    transform-origin: center;
+    margin-left : 30%;
+    margin-top : 30%;
+  }
+
+  .playerCard {
+    transform : scale(0.75);
+    margin : 3%
+  }
+
+}
+
+
 @media (min-width : 641px) {
   #background-shader {
     position: absolute;

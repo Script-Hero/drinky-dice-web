@@ -2,9 +2,13 @@
   z-index: 1;
   position: relative;
   display: inline-block;
-  margin-left : 50px;
-  margin-right : 50px;
   text-align: center;
+  margin : 0;
+  padding : 0;
+  flex-basis: auto;
+  align-self:flex-start;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 #player-card-circle {
@@ -51,7 +55,7 @@
 
 #name {
   font-size : 20px;
-  margin-top : 10px;
+  transform : translateY(-10px);
   font-family: Roboto;
 }
 
@@ -60,6 +64,7 @@
 @media screen and (max-width: 40em) and (max-height : 700px) {
   #player-card {
     transform : scale(0.75);
-    margin : 0;
+    margin-bottom : -200%;
+    margin-top : -10%;
   }
 }

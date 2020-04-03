@@ -3,7 +3,8 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-player-card',
   templateUrl: './player-card.component.html',
-  styleUrls: ['./player-card.component.css']
+  styleUrls: ['./player-card.component.css'],
+  preserveWhitespaces: false
 })
 
 export class PlayerCardComponent implements OnInit {
@@ -15,8 +16,6 @@ export class PlayerCardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log(this.loser)
-  }
+  ngOnInit() {}
 
 }

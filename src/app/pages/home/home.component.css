@@ -1,14 +1,9 @@
-html, body {
-  background-color : #343434;
+#psuedo-body{
+  height : 100vh;
+  width : 100vw;
+  position : relative;
+  overflow : hidden;
 }
-
-
-body {
-  overflow: hidden;
-}
-
-
-
 
 #drinky-dice {
   color : white;
@@ -120,6 +115,7 @@ Phone #background-shader OLD
 }
 
 
+
 /** Phones **/
 @media screen and (max-width: 40em) {
   #background-shader {
@@ -133,20 +129,6 @@ Phone #background-shader OLD
     z-index: 1;
     transform: rotateY(0deg) rotate(45deg);
     transform-origin: center;
-  }
-
-  html, body {
-    overflow : hidden;
-    left : 0;
-    top : 0;
-    height : 100%;
-    width : 100%
-  }
-
-  body {
-    position : relative;
-    margin : 0;
-    padding : 0;
   }
 
   #drinky-dice {
@@ -176,13 +158,13 @@ Phone #background-shader OLD
 
 
 
-@media (min-width : 641px) and (max-width : 1000px){
+@media (min-width : 641px){
   #background-shader {
     position: absolute;
 
     top : 0;
     left : 0;
-    height : 170%;
+    height : 200%;
     width : 170%;
     background-color : #1E1E1E;
     z-index: 1;
@@ -191,18 +173,7 @@ Phone #background-shader OLD
     margin-left : 30%;
     margin-top : 30%;
   }
-
-  html, body {
-    overflow : hidden;
-    left : 0;
-    top : 0;
-    height : 100%;
-    width : 100%
-  }
-
-  body {
-    position : relative;
-    margin : 0;
-    padding : 0;
+  #page-content {
+    padding-top : 5%;
   }
 }

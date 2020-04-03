@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { GameSaveService } from '../../game-save.service';
 import { Router } from '@angular/router';
 
-import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
-  encapsulation : ViewEncapsulation.None
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 

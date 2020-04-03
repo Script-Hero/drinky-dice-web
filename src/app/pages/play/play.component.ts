@@ -4,16 +4,18 @@ import { GameSaveService } from '../../game-save.service';
 @Component({
   selector: 'app-play',
   templateUrl: './play.component.html',
-  styleUrls: ['./play.component.css'],
-  encapsulation : ViewEncapsulation.None
+  styleUrls: ['./play.component.css']
+  //encapsulation : ViewEncapsulation.None
 
 })
 export class PlayComponent implements OnInit {
   players = [];
+  save;
   constructor(private Save : GameSaveService) { }
 
   ngOnInit() {
-    this.players = this.Save.getGameSave().players;
+    this.save = this.Save.getGameSave();
+    this.players = this.save.players;
   }
 
   roll(n) {
@@ -42,7 +44,8 @@ export class PlayComponent implements OnInit {
 
     this.players[checker.index].dice += 1;
     this.players[checker.index].loser = true;
-    this.Save.setGameSave({roundNumber : this.Save.getGameSave().roundNumber + 1, players : this.players});
+    this.Save.setGameSave({roundNumber : this.Save.getGameSave().roundNumber + 1, players : this.players, colors_used : this.save.colors_used});
+
   }
 
 }

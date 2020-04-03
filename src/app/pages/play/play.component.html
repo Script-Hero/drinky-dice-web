@@ -1,17 +1,22 @@
 
-<div id="page-content">
-    <app-back-button></app-back-button>
-  <div id="player-card-container">
-    <div id="centerwrapper">
-      <app-player-card class='playerCard' *ngFor="let p of players" [numDice]="p.dice" [curNum]="p.currentNumber"  [playerName]="p.name" [loser]="p.loser"
-      [color]="p.color"></app-player-card>
+<div id="psuedo-body">
+
+
+  <div id="page-content">
+      <app-back-button></app-back-button>
+    <div id="player-card-container">
+      <div id="centerwrapper">
+        <app-player-card ngPreserveWhitespaces class='playerCard' *ngFor="let p of players" [numDice]="p.dice" [curNum]="p.currentNumber"  [playerName]="p.name" [loser]="p.loser"
+        [color]="p.color"></app-player-card>
+      </div>
     </div>
+    <div id="rollButtonContainer">
+      <button id="rollButton" (click)="rollButton()">Roll!</button>
+    </div>
+
   </div>
 
-  <div id="rollButtonContainer">
-    <button id="rollButton" (click)="rollButton()">Roll!</button>
+  <div id="shader-container">
+    <div id="background-shader"></div>
   </div>
 </div>
-
-
-<div id="background-shader"></div>

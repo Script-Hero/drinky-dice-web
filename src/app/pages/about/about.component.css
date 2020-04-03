@@ -1,7 +1,10 @@
-html, body {
+#psuedo-body {
   background-color : white;
-  overflow : visible;
+  overflow : hidden;
+  display : flex;
+  flex-direction: column;
 }
+
 
 #back-icon {
   color : black;
@@ -40,7 +43,7 @@ html, body {
   z-index : 2;
 }
 
-.subheader {
+.subheader:not(#what-is) {
   margin-top : 8%
 }
 .body-text {
@@ -48,6 +51,6 @@ html, body {
   line-height: 2;
 }
 
-#why-code-this-resp {
+#who-code-this-resp {
   padding-bottom : 5%;
 }

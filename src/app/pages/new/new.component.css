@@ -1,9 +1,7 @@
-html, body {
-  background-color : #343434;
-}
 
 #contentContainer {
   position: relative;
+  overflow : visible;
 }
 
 #background-container {
@@ -194,5 +192,30 @@ html, body {
   #playButton {
     margin-top : 10%;
     transform : scale(1.1);
+  }
+}
+
+@media (min-width : 641px){
+  #background-shader {
+    position: absolute;
+
+    top : 0;
+    left : 0;
+    height : 200%;
+    width : 170%;
+    background-color : #1E1E1E;
+    z-index: 1;
+    transform: rotateY(0deg) rotate(45deg);
+    transform-origin: center;
+    margin-left : 30%;
+    margin-top : 30%;
+  }
+
+  #add-players-title {
+    padding-top : 5%;
+  }
+
+  #inputBoxContainer {
+    padding-top : 3%;
   }
 }

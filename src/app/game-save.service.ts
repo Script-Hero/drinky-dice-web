@@ -54,7 +54,7 @@ export class GameSaveService {
     var save = this.getGameSave();
     while(true){
       let c = this.colors[Math.round(Math.random() * (this.colors.length-1))];
-      if(!save.colors_used.includes(c) || this.colors_used.length >= this.colors.length) {
+      if(!save.colors_used.includes(c) || save.colors_used.length >= this.colors.length) {
         save.colors_used.push(c)
         this.setGameSave(save);
         return c;

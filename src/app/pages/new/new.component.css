@@ -70,6 +70,9 @@
   position : absolute;
 }
 
+.playerItem, .playerItemColor{
+  border-radius : 5px;
+}
 #addNameButton {
   position: inline-block;
   z-index: 2;

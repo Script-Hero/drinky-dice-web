@@ -133,6 +133,13 @@
     position : relative;
     z-index : 1;
 
+
+  }
+
+  #rollButton, #rollButtonContainer{
+    margin-top : -15%;
+
+
   }
 
   .playerCard {
@@ -199,7 +206,6 @@
 @media (min-width : 641px) {
   #background-shader {
     position: absolute;
-
     top : 0;
     left : 0;
     height : 200%;
@@ -210,5 +216,22 @@
     transform-origin: center;
     margin-left : 30%;
     margin-top : 30%;
+  }
+
+  #rollButton {
+    display : block;
+    margin : auto;
+    margin-top : 5%;
+    margin-bottom : 3%;
+    cursor : pointer;
+    height : 50px;
+    width : 300px;
+    background-color : #E6B31E;
+    font-family : Roboto;
+    font-size : 30px;
+    border-radius : 3px;
+    border : none;
+    position : relative;
+    z-index : 1;
   }
 }

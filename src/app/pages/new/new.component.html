@@ -5,12 +5,11 @@
 <button id="playButton" (click)="play()">Play</button>
 
 !-->
-
+<app-back-button href="/home" id='backButton'></app-back-button>
   <div id="contentContainer">
-  <app-back-button href="/home" id='backButton'></app-back-button>
+
 
   <h1 id="add-players-title">Add Players</h1>
-
 
     <div id="playersList">
       <div [className]="i==0 ? 'first playerItem' : 'playerItem'" *ngFor='let p of players; index as i'>
@@ -19,16 +18,18 @@
       </div>
     </div>
 
-    <div id="inputBoxContainer">
-      <input autocomplete="off" #box type="text" id="name-input-box" (keyup.enter)='onSubmit(box.value)'>
 
-      <div id="addNameButton" (click)='onSubmit(box.value)'><h1 id="addNameButtonText">Add</h1></div>
+      <div id="inputBoxContainer">
+        <input autocomplete="off" #box type="text" id="name-input-box" (keyup.enter)='onSubmit(box.value)'>
 
-      <div id="playButton" (click)="play()">
-        <span id="playButtonText">Play</span>
+        <div id="addNameButton" (click)='onSubmit(box.value)'><h1 id="addNameButtonText">Add</h1></div>
+
+        <div id="playButton" (click)="play()">
+          <span id="playButtonText">Play</span>
+        </div>
+
       </div>
 
-    </div>
 
   </div>
 

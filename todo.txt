@@ -2,5 +2,5 @@ X character limit on names (10 chars)
 X player limit
 X get rid of border on dice svg
 X add more colors for players
-_ add tablet support
+X add tablet support
 X add a back button on new and play pages

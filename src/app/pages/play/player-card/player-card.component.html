@@ -2,7 +2,7 @@
   <p id="numDice" [style.color]="loser ? '#e6b31e' : 'white'">x{{numDice}}</p>
 
   <div id="player-card-circle" [style.backgroundColor]="color" >
-    <p id="curNum" >{{curNum}}</p>
+    <p id="curNum" [style.color]="loser ? '#e6b31e' : 'white'">{{curNum}}</p>
     <div id="circle-shadow"></div>
   </div>
 

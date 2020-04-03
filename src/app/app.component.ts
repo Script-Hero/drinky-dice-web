@@ -12,6 +12,7 @@ export class AppComponent {
   constructor(public router: Router){
      this.router.events.subscribe(event => {
         if(event instanceof NavigationEnd){
+        
             gtag('config', 'UA-162761110-1',
                   {
                     'page_path': event.urlAfterRedirects

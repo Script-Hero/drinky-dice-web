@@ -1,3 +1,8 @@
+a {
+  color : blue;
+  text-decoration: none;
+}
+
 #psuedo-body {
   background-color : white;
   overflow : hidden;

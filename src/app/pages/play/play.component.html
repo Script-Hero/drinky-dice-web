@@ -11,7 +11,7 @@
       </div>
     </div>
     <div id="rollButtonContainer">
-      <button id="rollButton" (click)="rollButton()">Roll!</button>
+      <button id="rollButton" (click)="rollButton()" [ngClass]='players.length < 5 ? "buttonAbsolute" : "buttonRelative"'>Roll!</button>
     </div>
 
   </div>
